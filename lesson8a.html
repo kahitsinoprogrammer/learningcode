@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Burger Haven - Order Menu</title>
+  </head>
+  <body>
+    <h1>Welcome to Burger Haven!</h1>
+    <img
+      src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+      alt="Burger Haven Banner"
+      \
+      height="200"
+      width="400"
+    />
+    <hr />
+    <form action="/submit-order" method="post">
+      <table cellspacing="10" cellpadding="10">
+        <!-- Burgers Section -->
+        <tr>
+          <th colspan="2"><h2>Burgers</h2></th>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/640px-Cheeseburger.jpg"
+              alt="Cheeseburger"
+              height="50"
+              width="100"
+            />
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="order[]" value="Cheeseburger" />
+              <b>Cheeseburger</b> - $5.99
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://assets.epicurious.com/photos/5e4c65cfd57b3b000872c652/4:3/w_3604,h_2703,c_limit/VeggieBurger_RECIPE_IG_021320_516_VOG_final.jpg"
+              alt="Veggie Burger"
+              height="50"
+              width="100"
+            />
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="order[]" value="Veggie Burger" />
+              <b>Veggie Burger</b> - $4.99
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://www.seriouseats.com/thmb/MBJZXTROIhiNcn5pylcMswqgrvo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2013__07__20130723-bacon-weave-food-lab-burger-step-by-step-27-4f43a832acb242789dbc4133810a281f.jpg"
+              alt="Bacon Burger"
+              height="50"
+              width="100"
+            />
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="order[]" value="Bacon Burger" />
+              <b>Bacon Burger</b> - $6.99
+            </label>
+          </td>
+        </tr>
+        <!-- Sides Section -->
+        <tr>
+          <th colspan="2"><h2>Sides</h2></th>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://www.recipetineats.com/tachyon/2022/09/Crispy-Fries_8.jpg"
+              alt="Fries"
+              height="50"
+              width="100"
+            />
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="order[]" value="Fries" />
+              <b>Fries</b> - $2.99
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2024/06/cheese-onion-rings.jpg?im=Resize,width=742;"
+              alt="Onion Rings"
+              height="50"
+              width="100"
+            />
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="order[]" value="Onion Rings" />
+              <b>Onion Rings</b> - $3.49
+            </label>
+          </td>
+        </tr>
+        <!-- Drinks Section -->
+        <tr>
+          <th colspan="2"><h2>Drinks</h2></th>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://media.istockphoto.com/id/1167152799/vector/soda-can-in-aluminium-on-white.jpg?s=612x612&w=0&k=20&c=IgRwBfnIe7teV12qvOGMZEWJFDn4QpnJ4mXx0Sm2tBM="
+              alt="Soda"
+              height="50"
+              width="100"
+            />
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="order[]" value="Soda" />
+              <b>Soda</b> - $1.99
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Strawberry_milk_shake_%28cropped%29.jpg/220px-Strawberry_milk_shake_%28cropped%29.jpg"
+              alt="Milkshake"
+              height="50"
+              width="100"
+            />
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="order[]" value="Milkshake" />
+              <b>Milkshake</b> - $3.99
+            </label>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <input type="submit" value="Submit Order" />
+    </form>
+  </body>
+</html>

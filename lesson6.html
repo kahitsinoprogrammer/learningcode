@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 6</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <!--Text Field-->
+      <label for="name"> Name </label>
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+
+      <!--Password Field-->
+      <label> Password </label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <!--Checkboxes-->
+      <p>Select Hobby:</p>
+      <label
+        ><input type="checkbox" name="hobby" value="gaming" /> Gaming</label
+      >
+      <label>
+        <input type="checkbox" name="hobby" value="reading" /> Reading</label
+      >
+
+      <!--Radio button-->
+      <p>Gender:</p>
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label> <input type="radio" name="gender" value="female" /> Female</label>
+      <label> <input type="radio" name="gender" value="LGBT" /> LGBT++</label>
+      <br /><br />
+      <!--Dropdown Menu-->
+      <label for="country">Country</label>
+      <select id="country">
+        <option value="philippines">Philippines</option>
+        <option value="philippines">Thailand</option>
+        <option value="philippines">Vietnam</option>
+      </select>
+
+      <br /><br />
+      <!--Email-->
+      <label for="email">Email </label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+      <!--MIN AND MAX-->
+      <label for="pnumber">Phone Number </label>
+      <input
+        type="number"
+        id="pnumber"
+        name="pnumber"
+        required
+        min="18"
+        max="60"
+      />
+      <br /><br />
+      <!--Min lenght and Max lenght-->
+      <label for="username"> username </label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        minlength="5"
+        maxlength="15"
+        required
+      />
+      <br /><br />
+
+      <!--TEL-->
+      <label for="telephone"> Telephone </label>
+      <input
+        type="tel"
+        id="telephone"
+        name="telephone"
+        pattern="[0-9]{7}"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

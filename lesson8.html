@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+</head>
+<body>
+
+    <h1>HTML5 Advanced Features</h1>
+
+    <!-- Form demonstrating new HTML5 input types -->
+    <form>
+        <!-- Date Input: Allows users to select a date from a calendar -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Email Input: Validates email addresses automatically -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Color Picker Input: Allows users to pick a color -->
+        <label for="favcolor">Choose your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <br><br>
+
+        <!-- Range Slider: Users can select a value within a range -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="90">
+        <br><br>
+
+        <!-- Number Input: Only allows numeric values -->
+        <label for="quantity">Quantity (1-10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <br><br>
+
+        <!-- Time Input: Allows users to select a time -->
+        <label for="time">Select a time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <!-- URL Input: Ensures only valid URLs are entered -->
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        <br><br>
+
+        <!-- Tel Input: Used for telephone numbers -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        <br><br>
+
+        <!-- Search Input: Designed for search queries -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Type to search...">
+        <br><br>
+
+        <!-- File Input: Allows file uploads -->
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
